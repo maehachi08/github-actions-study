@@ -1,0 +1,62 @@
+site_name: maehachi08/github-actions-study
+site_url: https://maehachi08.github.io/github-actions-study
+site_description: Project documentation with Markdown.
+site_author: maehachi08
+
+repo_url: https://github.com/maehachi08/github-actions-study
+edit_uri: ""
+
+plugins:
+  - search
+  - glightbox
+  - mkdocs_pymdownx_material_extras
+  - caption
+
+# theme: readthedocs
+theme:
+  name: material
+
+  # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#admonition-icons
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+
+# https://facelessuser.github.io/pymdown-extensions/
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.magiclink
+  - attr_list
+  - md_in_html
+  - admonition
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - References: references.md
+  - Caching: caching.md
+  - Reusable workflows: reusable-workflows.md
+  - Secrets: secrets.md
+  - Certificate:
+    - Author and maintain workflows:
+      - Work with events that trigger workflows: certificate/author_and_maintain_workflows/01_work_with_events_that_trigger_workflows.md
+      - Use the components of a workflows: certificate/author_and_maintain_workflows/02_use_the_components_of_a_workflows.md
+      - Use encrypted secrets and environment variables as part of a workflow: certificate/author_and_maintain_workflows/03_use_encrypted_secrets_and_environment_variables_as_part_of_a_workflows.md
